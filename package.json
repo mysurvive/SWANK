@@ -1,0 +1,51 @@
+{
+    "private": true,
+    "name": "swank",
+    "description": "Savage Worlds Action Node Kit",
+    "license": "MIT",
+    "homepage": "https://github.com/mysurvive/SWANK",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mysurvive/SWANK"
+    },
+    "contributors": [
+        {
+            "name": "MySurvive"
+        }
+    ],
+    "type": "module",
+    "devDependencies": {
+        "@eslint/eslintrc": "^3.3.5",
+        "@eslint/js": "^9.39.4",
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^25.9.1",
+        "@types/prompts": "^2.4.9",
+        "@typescript-eslint/eslint-plugin": "^8.60.0",
+        "@typescript-eslint/parser": "^8.60.0",
+        "esbuild": "^0.28.0",
+        "eslint": "^9.39.4",
+        "eslint-config-prettier": "^8.10.2",
+        "eslint-plugin-json": "^4.0.1",
+        "eslint-plugin-prettier": "^5.5.5",
+        "fs-extra": "^11.3.5",
+        "fvtt-types": "npm:@league-of-foundry-developers/foundry-vtt-types@^13.346.0-beta.20250812191140",
+        "globals": "^17.6.0",
+        "prettier": "^3.8.3",
+        "prompts": "^2.4.2",
+        "sass": "^1.100.0",
+        "tsx": "^4.22.3",
+        "typescript": "^5.9.3",
+        "vite": "^8.0.14",
+        "vite-plugin-checker": "^0.13.0",
+        "vite-plugin-static-copy": "^4.1.0"
+    },
+    "scripts": {
+        "build": "npm run clean && vite build",
+        "clean": "tsx ./build/clean.ts",
+        "link": "tsx ./build/link-foundry.ts",
+        "lint": "npm run lint:ts && npm run prettier:scss",
+        "lint:fix": "eslint ./build ./src --ext .ts --fix .",
+        "lint:ts": "eslint ./build ./src --ext .ts",
+        "prettier:scss": "prettier --check src/static/styles"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "id": "swank",
+    "title": "SWANK",
+    "description": "Savage Worlds Action Node Kit",
+    "authors": [
+        {
+            "name": "MySurvive",
+            "discord": "mysurvive"
+        }
+    ],
+    "version": "0.0.0",
+    "compatibility": {
+        "minimum": "14",
+        "verified": "14.363",
+        "maximum": "14"
+    },
+    "relationships": {
+        "systems": [
+            {
+                "id": "swade",
+                "type": "system",
+                "compatibility": {
+                    "minimum": "6.0.0",
+                    "verified": "6.0.2"
+                }
+            }
+        ]
+    },
+    "url": "https://github.com/mysurvive/SWANK",
+    "esmodules": ["swank.mjs"],
+    "styles": ["styles/swank.css"]
+}
