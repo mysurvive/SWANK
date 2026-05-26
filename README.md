@@ -1,2 +1,2 @@
 # SWANK
-Savage Worlds Accessory Node Kit
+Savage Worlds Action Node Kit
