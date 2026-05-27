@@ -30,6 +30,7 @@
         "fs-extra": "^11.3.5",
         "fvtt-types": "npm:@league-of-foundry-developers/foundry-vtt-types@^13.346.0-beta.20250812191140",
         "globals": "^17.6.0",
+        "pixi.js": "^7.4.3",
         "prettier": "^3.8.3",
         "prompts": "^2.4.2",
         "sass": "^1.100.0",
@@ -41,6 +42,7 @@
     },
     "scripts": {
         "build": "npm run clean && vite build",
+        "build:watch": "npm run clean && vite build --watch --mode development",
         "clean": "tsx ./build/clean.ts",
         "link": "tsx ./build/link-foundry.ts",
         "lint": "npm run lint:ts && npm run prettier:scss",
